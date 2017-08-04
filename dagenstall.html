@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dagens tall</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+        <div id="kontroll">
+            <input type="text" value="123" id="valg" maxlength="3">
+            
+            <button id="valgKnapp" onclick="oppdater()">Velg tall</button>
+            
+            <button id="restartKnapp" onclick="restart()">Restart</button>
+
+        </div>
+        
+        
+        <table id="tabell">
+            
+            <tr id="upper">
+                <td id="tverrsum" onclick="tverrSum()">TVERRSUM</td>
+                <td id="produkt" onclick="prod()">PRODUKT</td>
+                <td id="partalloddetall" onclick="parOdd()">PARTALL eller ODDETALL?</td>
+            </tr>
+            
+            <tr id="middle">
+                <td id="halvparten" onclick="halvpart()">HALVPARTEN</td>
+                <td id="dagenstall"></td>
+                <td id="detdobbelte" onclick="dobbelTall()">DOBBELT</td>
+            </tr>
+            
+            <tr id="lower">
+                <td id="tvillingtall" onclick="tvillingTall()">TVILLINGTALL</td>
+                <td id="utvidetform" onclick="utvidetForm()">UTVIDET FORM</td>
+                <td id="nabotall" onclick="naboTall()">NABOTALL</td>
+            </tr>
+            
+        </table>
+        
+        <script src="dagenstall.js"></script>
+    
+    
+    
+    </body>
+
+
+</html>
